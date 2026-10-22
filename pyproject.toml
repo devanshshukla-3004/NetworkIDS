@@ -12,5 +12,8 @@ dependencies = ["scapy>=2.5.0,<3.0.0"]
 [project.scripts]
 networkids = "networkids.cli:main"
 
+[tool.setuptools.packages.find]
+include = ["networkids*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
